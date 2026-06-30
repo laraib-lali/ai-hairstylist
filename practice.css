@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.hero-section{
+    background:#DAB98B;
+    min-height:100vh;
+    padding:80px 0;
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+/* LOGIN */
+
+.login-card{
+    border:2px solid #6f4d3e;
+    border-radius:25px;
+    padding:30px;
+}
+
+.login-card h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:40px;
+    color:#4b1f1f;
+}
+
+.login-card input{
+    width:100%;
+    height:45px;
+    margin-bottom:15px;
+}
+
+/* RIGHT SIDE */
+
+.content-area{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:0;
+}
+
+.style-card{
+    flex:1;
+      background:#b58967;
+    border-radius:25px;
+    padding:50px;
+
+    width:650px;
+    min-height:400px;
+}
+
+.style-card h1{
+      font-size:70px;
+    line-height:1.1;
+    color:white;
+    margin-bottom:25px;
+}
+
+.style-card p{
+    color:white;
+    line-height:1.7;
+    max-width:450px;
+    font-size:22px;
+}
+
+
+.read-btn{
+    margin-top:25px;
+    padding:12px 24px;
+}
+
+.girl-img{
+    width:100%;
+    width:430px;
+    display:block;
+}
+@media (max-width:768px){
+
+    .hero-grid{
+        grid-template-columns:1fr;
+    }
+
+    .content-area{
+        flex-direction:column;
+    }
+
+    .girl-img{
+        max-width:280px;
+    }
+
+    .style-card h1{
+        font-size:40px;
+        text-align:center;
+    }
+
+    .style-card p{
+        text-align:center;
+    }
+
+    .read-btn{
+        display:block;
+        margin:20px auto 0;
+    }
+}
